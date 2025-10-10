@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=16 format=3 uid="uid://dye1r7d2uei22"]
+[gd_resource type="SpriteFrames" load_steps=11 format=3 uid="uid://dye1r7d2uei22"]
 
 [ext_resource type="Texture2D" uid="uid://sh4qer1bvov" path="res://assets/sprites/mario-luigi.png" id="1_8dyf5"]
 
@@ -33,26 +33,6 @@ region = Rect2(96, 32, 16, 16)
 [sub_resource type="AtlasTexture" id="AtlasTexture_4uj76"]
 atlas = ExtResource("1_8dyf5")
 region = Rect2(112, 32, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gw2e2"]
-atlas = ExtResource("1_8dyf5")
-region = Rect2(224, 32, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_m7lxv"]
-atlas = ExtResource("1_8dyf5")
-region = Rect2(240, 32, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_krfpn"]
-atlas = ExtResource("1_8dyf5")
-region = Rect2(256, 32, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gakhf"]
-atlas = ExtResource("1_8dyf5")
-region = Rect2(272, 32, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_b6jgg"]
-atlas = ExtResource("1_8dyf5")
-region = Rect2(288, 32, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2sfi8"]
 atlas = ExtResource("1_8dyf5")
@@ -109,22 +89,7 @@ animations = [{
 "name": &"run",
 "speed": 5.0
 }, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gw2e2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_m7lxv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_krfpn")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gakhf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_b6jgg")
-}],
+"frames": [],
 "loop": true,
 "name": &"swim",
 "speed": 5.0
