@@ -1,6 +1,14 @@
-[gd_resource type="SpriteFrames" load_steps=9 format=3 uid="uid://dye1r7d2uei22"]
+[gd_resource type="SpriteFrames" load_steps=11 format=3 uid="uid://dye1r7d2uei22"]
 
 [ext_resource type="Texture2D" uid="uid://sh4qer1bvov" path="res://assets/sprites/mario-luigi.png" id="1_8dyf5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2as3d"]
+atlas = ExtResource("1_8dyf5")
+region = Rect2(192, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tyfog"]
+atlas = ExtResource("1_8dyf5")
+region = Rect2(208, 32, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oon4d"]
 atlas = ExtResource("1_8dyf5")
@@ -32,6 +40,17 @@ region = Rect2(128, 32, 16, 16)
 
 [resource]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2as3d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tyfog")
+}],
+"loop": true,
+"name": &"climb",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_oon4d")
