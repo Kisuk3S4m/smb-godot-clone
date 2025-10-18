@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://nc6jfgs0a8le"]
+
+[ext_resource type="Script" uid="uid://cgdlquek51roh" path="res://scripts/players/player.gd" id="1_ldeu4"]
+[ext_resource type="SpriteFrames" uid="uid://c5rhh3m58mrqu" path="res://resources/animations/small_mario.tres" id="1_plyga"]
+[ext_resource type="Script" uid="uid://cuvg2ilc2oanp" path="res://scripts/players/camera.gd" id="3_kc87p"]
+[ext_resource type="AudioStream" uid="uid://0jj8ok7mgxp7" path="res://assets/sfx/jumpsmall.wav" id="4_edvpf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_plyga"]
+size = Vector2(12, 16)
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 2
+script = ExtResource("1_ldeu4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_plyga")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_plyga")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("3_kc87p")
+
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_edvpf")
