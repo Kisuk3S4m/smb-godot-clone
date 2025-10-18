@@ -1,10 +1,14 @@
-[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://c5rhh3m58mrqu"]
+[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://c5rhh3m58mrqu"]
 
 [ext_resource type="Texture2D" uid="uid://c2hul8ynegpiw" path="res://assets/sprites/mario-luigi.png" id="1_8dyf5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mvvlu"]
 atlas = ExtResource("1_8dyf5")
 region = Rect2(176, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2xnhf"]
+atlas = ExtResource("1_8dyf5")
+region = Rect2(144, 32, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8dyf5"]
 atlas = ExtResource("1_8dyf5")
@@ -26,6 +30,14 @@ animations = [{
 }],
 "loop": false,
 "name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2xnhf")
+}],
+"loop": false,
+"name": &"jump",
 "speed": 5.0
 }, {
 "frames": [{
