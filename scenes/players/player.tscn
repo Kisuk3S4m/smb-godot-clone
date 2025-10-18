@@ -1,8 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://nc6jfgs0a8le"]
+[gd_scene load_steps=3 format=3 uid="uid://nc6jfgs0a8le"]
 
 [ext_resource type="SpriteFrames" uid="uid://c5rhh3m58mrqu" path="res://resources/animations/small_mario.tres" id="1_plyga"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_plyga"]
+size = Vector2(12, 16)
 
 [node name="Player" type="CharacterBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = ExtResource("1_plyga")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_plyga")
