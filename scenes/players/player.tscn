@@ -15,3 +15,5 @@ sprite_frames = ExtResource("1_plyga")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_plyga")
+
+[node name="Camera2D" type="Camera2D" parent="."]
