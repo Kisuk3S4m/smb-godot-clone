@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://nc6jfgs0a8le"]
+[gd_scene load_steps=4 format=3 uid="uid://nc6jfgs0a8le"]
 
+[ext_resource type="Script" uid="uid://cgdlquek51roh" path="res://scripts/players/player.gd" id="1_ldeu4"]
 [ext_resource type="SpriteFrames" uid="uid://c5rhh3m58mrqu" path="res://resources/animations/small_mario.tres" id="1_plyga"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_plyga"]
@@ -7,6 +8,7 @@ size = Vector2(12, 16)
 
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 2
+script = ExtResource("1_ldeu4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = ExtResource("1_plyga")
