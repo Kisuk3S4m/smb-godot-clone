@@ -1,3 +1,11 @@
-[gd_scene format=3 uid="uid://bqw2l4ng6auxf"]
+[gd_scene load_steps=2 format=3 uid="uid://bqw2l4ng6auxf"]
+
+[ext_resource type="Texture2D" uid="uid://dl2hq0mdbdkxs" path="res://assets/backgrounds/bg-1-1.png" id="1_2q6dc"]
 
 [node name="Level" type="Node2D"]
+
+[node name="Background" type="Parallax2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Background"]
+texture = ExtResource("1_2q6dc")
+centered = false
