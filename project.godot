@@ -20,6 +20,10 @@ config/icon="res://icon.svg"
 window/size/viewport_width=256
 window/size/viewport_height=224
 
+[layer_names]
+
+2d_physics/layer_1="terrain"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
