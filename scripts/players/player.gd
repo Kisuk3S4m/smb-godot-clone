@@ -29,3 +29,8 @@ func update_movement(delta: float) -> void:
 func update_animation() -> void:
     if direction != 0:
         animated_sprite.flip_h = direction < 0
+
+    if velocity.x != 0:
+        animated_sprite.play("run")
+    else:
+        animated_sprite.play("idle")
